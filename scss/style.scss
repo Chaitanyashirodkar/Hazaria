@@ -43,9 +43,6 @@ body {
         font-size: 14px;
         line-height: 17px;
         text-transform: capitalize;
-        
-
-        
 
         color: #2d3b5f;
         margin-bottom: 5px;
@@ -58,7 +55,14 @@ input {
     background: #fafafa;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
+    background: #FAFAFA !important;
     border-radius: 4px;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;color: #798199;
+    }
 }
 
 .login_btn {
@@ -88,9 +92,6 @@ input {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    
-
-    
 
     color: #939aac;
     a {
@@ -98,7 +99,7 @@ input {
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        
+
         display: inline-block;
         color: #2d3b5f;
         margin-left: 6px;
@@ -122,9 +123,6 @@ input {
         font-weight: 600;
         font-size: 30px;
         line-height: 36px;
-        
-
-        
 
         color: #2d3b5f;
         text-align: center;
@@ -149,6 +147,7 @@ input {
 
     .rightbar {
         padding: 50px;
+        padding-top: 0;
         width: 100%;
         .rightbar-top {
             display: flex;
@@ -157,6 +156,18 @@ input {
         .user {
             display: flex;
             align-items: center;
+            position: relative;
+            padding-right: 40px;
+            &::after{
+                content: "";
+                height: 8px;
+                width: 12px;
+                background-size: contain;
+                background-image: url(../img/Vector-285.png);
+                background-repeat: no-repeat;
+                right: 0;
+                position: absolute;
+            }
             .user-img img {
                 width: 40px;
                 height: 40px;
@@ -168,9 +179,6 @@ input {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 22px;
-                
-
-                
 
                 color: #2d3b5f;
             }
@@ -200,9 +208,6 @@ input {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    
-
-    
 
     color: #798199;
     margin-bottom: 60px;
@@ -212,11 +217,8 @@ input {
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
-    
 
     text-align: center;
-
-    
 
     color: #2d3b5f;
 
@@ -228,11 +230,8 @@ input {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    
 
     text-align: center;
-
-    
 
     color: #798199;
     margin-bottom: 50px;
@@ -359,9 +358,6 @@ and also iPads specifically.
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    
-
-    
 
     color: #798199;
     .input-group {
@@ -384,7 +380,6 @@ and also iPads specifically.
     font-weight: bold;
     font-size: 18px;
     line-height: 139.02%;
-    
 
     text-align: center;
 
@@ -394,9 +389,11 @@ and also iPads specifically.
     font-weight: bold;
     font-size: 18px;
     line-height: 139.02%;
-    
 
     text-align: center;
 
     color: #ff7a00;
+}
+footer{
+    bottom: 0;
 }

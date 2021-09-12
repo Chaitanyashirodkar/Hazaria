@@ -57,7 +57,29 @@ input {
   background: #fafafa;
   border: 1px solid #ebebeb;
   box-sizing: border-box;
+  background: #FAFAFA !important;
   border-radius: 4px;
+}
+input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #798199;
+}
+input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #798199;
+}
+input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #798199;
 }
 
 .login_btn {
@@ -134,6 +156,7 @@ input {
 }
 .container-admin .rightbar {
   padding: 50px;
+  padding-top: 0;
   width: 100%;
 }
 .container-admin .rightbar .rightbar-top {
@@ -143,6 +166,18 @@ input {
 .container-admin .rightbar .user {
   display: flex;
   align-items: center;
+  position: relative;
+  padding-right: 40px;
+}
+.container-admin .rightbar .user::after {
+  content: "";
+  height: 8px;
+  width: 12px;
+  background-size: contain;
+  background-image: url(../img/Vector-285.png);
+  background-repeat: no-repeat;
+  right: 0;
+  position: absolute;
 }
 .container-admin .rightbar .user .user-img img {
   width: 40px;
@@ -365,4 +400,8 @@ and also iPads specifically.
   line-height: 139.02%;
   text-align: center;
   color: #ff7a00;
+}
+
+footer {
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
